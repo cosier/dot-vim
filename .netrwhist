@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Volumes/Belldandy/Developer/work/prc/www/system-prc/lib/clients/prc'
+let g:netrw_dirhist_2='/Volumes/Belldandy/Developer/work/prc/www/system-prc/lib/clients'
+let g:netrw_dirhist_3='/Volumes/Belldandy/Developer/work/prc/www/system-prc/lib/clients/prc'
+let g:netrw_dirhist_4='/Volumes/Belldandy/Developer/work/prc/www/system-prc/lib/clients/prc/lib'
+let g:netrw_dirhist_5='/Volumes/Belldandy/Developer/work/prc/www/system-prc/lib/clients/prc/lib/prc'
+let g:netrw_dirhist_6='/Volumes/Belldandy/Developer/work/prc/www/system-prc'
+let g:netrw_dirhist_7='/Volumes/Belldandy/Developer/work/prc/www/system-prc/config'
+let g:netrw_dirhist_8='/Volumes/Belldandy/Developer/work/prc/www/system-prc/config/deploy'
+let g:netrw_dirhist_9='/Volumes/Belldandy/Developer/ext/iterm2-solarized'
