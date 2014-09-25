@@ -17,7 +17,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'kchmck/vim-coffee-script'
-Plug 'vim-trailing-whitespace'
+"Plug 'vim-trailing-whitespace'
+Plug 'bling/vim-airline'
 
 " On-demand loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
@@ -37,7 +38,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""
-
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
 syntax enable
 filetype plugin indent on
