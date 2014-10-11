@@ -20,6 +20,10 @@ Plug 'kchmck/vim-coffee-script'
 "Plug 'vim-trailing-whitespace'
 Plug 'bling/vim-airline'
 
+Plug 'pangloss/vim-javascript'
+Plug 'briancollins/vim-jst'
+
+Plug 'tpope/vim-haml'
 " On-demand loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
@@ -48,8 +52,11 @@ filetype plugin indent on
 set background=dark
 colorscheme solarized
 
-set ts=4
+set ts=2
 set expandtab
+set shiftwidth=2
+set softtabstop=2
+set autoindent
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
