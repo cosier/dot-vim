@@ -19,11 +19,22 @@ Plug 'evanmiller/nginx-vim-syntax'
 Plug 'kchmck/vim-coffee-script'
 "Plug 'vim-trailing-whitespace'
 Plug 'bling/vim-airline'
-
+Plug 'rking/ag.vim'
+Plug 'bronson/vim-trailing-whitespace'
 Plug 'pangloss/vim-javascript'
 Plug 'briancollins/vim-jst'
 
+Plug 'skalnik/vim-vroom'
+
+Plug 'scrooloose/nerdcommenter'
+
 Plug 'tpope/vim-haml'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-cucumber'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-dispatch'
+
 " On-demand loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
@@ -50,14 +61,20 @@ syntax enable
 filetype plugin indent on
 
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 set ts=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set autoindent
+set noswapfile
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=0
+let &colorcolumn="80,".join(range(220,999),",")
+

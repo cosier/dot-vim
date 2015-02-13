@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/bsiley/Developer/work/itt'
+let g:netrw_dirhist_2='/home/bailey/Developer/work/scaleboom/core'
+let g:netrw_dirhist_3='/home/bailey/.vim'
+let g:netrw_dirhist_4='/home/bailey'
+let g:netrw_dirhist_5='/home/bailey/Developer/work/scaleboom/core'
