@@ -60,6 +60,7 @@ set undodir=~/.vim/undo//
 syntax enable
 filetype plugin indent on
 
+set number
 set background=dark
 "colorscheme solarized
 
