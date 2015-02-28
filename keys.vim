@@ -17,3 +17,5 @@ nnoremap <C-R><C-V> <ESC>:tabnew ~/.vim/vimrc<CR>
 nnoremap <C-S> <ESC>:Ag! 
 nnoremap <Leader>s <ESC>:FixWhitespace<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+nnoremap <C-o> <ESC>:%s/2000/3030/g<CR>
