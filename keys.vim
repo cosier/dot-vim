@@ -19,3 +19,13 @@ nnoremap <Leader>s <ESC>:FixWhitespace<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 nnoremap <C-o> <ESC>:%s/2000/3030/g<CR>
+
+
+
+nmap <leader>h <ESC>:'<,'> !html2haml<CR>
+vmap <leader>h <ESC>:'<,'> !html2haml<CR>
+
+nmap <leader>e :%!haml2erb 2> /dev/null<CR>:set ft=eruby<CR>
+vmap <leader>e :!haml2erb 2> /dev/null<CR>
+
+

@@ -60,6 +60,8 @@ set undodir=~/.vim/undo//
 syntax enable
 filetype plugin indent on
 
+let NERDSpaceDelims=1
+
 set number
 set background=dark
 "colorscheme solarized
@@ -78,4 +80,12 @@ let g:ctrlp_working_path_mode = 'ra'
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=0
 let &colorcolumn="80,".join(range(220,999),",")
+
+function! CopyToOSClipboard() range
+  exec(":silent !cat %:p | sed -n " . a:firstline . "," . a:lastline . "p | pbcopy")
+  :redraw!
+endfunction
+
+nnoremap <Leader><Leader>c :call CopyToOSClipboard()<CR>
+vnoremap <Leader><Leader>c :call CopyToOSClipboard()<CR>
 
