@@ -25,6 +25,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'briancollins/vim-jst'
 
 Plug 'skalnik/vim-vroom'
+Plug 'mtscout6/vim-cjsx'
 
 Plug 'scrooloose/nerdcommenter'
 
@@ -34,6 +35,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
+
+Plug 'slim-template/vim-slim'
 
 " On-demand loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
