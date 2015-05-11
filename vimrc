@@ -35,8 +35,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
-
+Plug 'MattesGroeger/vim-bookmarks'
 Plug 'slim-template/vim-slim'
+
+Plug 'vim-scripts/ZoomWin'
 
 " On-demand loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
