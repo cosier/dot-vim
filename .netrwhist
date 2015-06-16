@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/bailey/Developer/work/backorders'
 let g:netrw_dirhist_2='/Users/bailey/Developer/work/skejio/core'
 let g:netrw_dirhist_3='/Users/bailey/Developer/work/dynamic/master'
+let g:netrw_dirhist_4='/Users/bailey/Developer/work/skejio/core'
