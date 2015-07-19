@@ -69,7 +69,7 @@ let NERDSpaceDelims=1
 
 set number
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
 set ts=2
 set expandtab
@@ -94,3 +94,7 @@ endfunction
 nnoremap <Leader><Leader>c :call CopyToOSClipboard()<CR>
 vnoremap <Leader><Leader>c :call CopyToOSClipboard()<CR>
 
+if has("gui_running")
+ set guioptions-=r  "remove right-hand scroll bar
+ set guioptions-=L  "remove left-hand scroll bar
+endif
