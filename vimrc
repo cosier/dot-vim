@@ -29,6 +29,11 @@ Plug 'mtscout6/vim-cjsx'
 
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'timonv/vim-cargo'
+Plug 'rust-lang/rust.vim'
+Plug 'phildawes/racer'
+
+
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
@@ -61,6 +66,12 @@ call plug#end()
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+
+set hidden
+let g:racer_cmd = "/usr/local/bin/racer"
+let $RUST_SRC_PATH="/Users/bailey/Developer/ext/rust/src/"
+
+
 
 syntax enable
 filetype plugin indent on
