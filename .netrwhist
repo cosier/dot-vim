@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/bailey/Developer/work/backorders'
-let g:netrw_dirhist_2='/Users/bailey/Developer/work/skejio/core'
-let g:netrw_dirhist_3='/Users/bailey/Developer/work/dynamic/master'
-let g:netrw_dirhist_4='/Users/bailey/Developer/work/skejio/core'
-let g:netrw_dirhist_5='/Users/bailey/Developer/work/hubify/core'
-let g:netrw_dirhist_6='/Users/bailey/Developer/work/skejio/core'
-let g:netrw_dirhist_7='/Users/bailey/Developer/work/hubify/core'
-let g:netrw_dirhist_8='/Users/bailey/Developer/work/skejio/core'
-let g:netrw_dirhist_9='/Users/bailey/Developer/work/hubify/core'
+let g:netrw_dirhist_cnt =0
