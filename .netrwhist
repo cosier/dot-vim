@@ -1,7 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/bailey/Developer/ext/duktape-rs'
-let g:netrw_dirhist_2='/Users/bailey/Developer/ext'
-let g:netrw_dirhist_3='/Users/bailey/Developer/work/dojo/origami'
-let g:netrw_dirhist_4='/Users/bailey/Developer/ext/duktape-rs'
-let g:netrw_dirhist_5='/Users/bailey/Developer/ext/duktape_client'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/bailey/Developer/work/hubify/core'
