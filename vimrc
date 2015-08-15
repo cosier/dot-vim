@@ -34,6 +34,10 @@ Plug 'rust-lang/rust.vim'
 Plug 'phildawes/racer'
 
 Plug 'vim-ruby/vim-ruby'
+Plug 'cespare/vim-toml'
+Plug 'timonv/vim-cargo'
+Plug 'rust-lang/rust.vim'
+
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
@@ -82,7 +86,8 @@ set number
 set background=dark
 colorscheme solarized
 
-set ts=2
+set colorcolumn=99
+
 set expandtab
 set shiftwidth=2
 set softtabstop=2
