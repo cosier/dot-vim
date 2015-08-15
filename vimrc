@@ -32,6 +32,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'cespare/vim-toml'
 Plug 'timonv/vim-cargo'
 Plug 'rust-lang/rust.vim'
+Plug 'phildawes/racer'
 
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
@@ -66,6 +67,12 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
+set hidden
+let g:racer_cmd = "/usr/local/bin/racer"
+let $RUST_SRC_PATH="/Users/bailey/Developer/ext/rust/src/"
+
+
+
 syntax enable
 filetype plugin indent on
 
@@ -73,7 +80,7 @@ let NERDSpaceDelims=1
 
 set number
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
 set colorcolumn=99
 
@@ -99,3 +106,7 @@ endfunction
 nnoremap <Leader><Leader>c :call CopyToOSClipboard()<CR>
 vnoremap <Leader><Leader>c :call CopyToOSClipboard()<CR>
 
+if has("gui_running")
+ set guioptions-=r  "remove right-hand scroll bar
+ set guioptions-=L  "remove left-hand scroll bar
+endif
