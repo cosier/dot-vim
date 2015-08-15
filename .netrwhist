@@ -1,13 +1,6 @@
-let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
 let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/bailey/Developer/work/backorders'
 let g:netrw_dirhist_2='/Users/bailey/Developer/work/skejio/core'
 let g:netrw_dirhist_3='/Users/bailey/Developer/work/dynamic/master'
 let g:netrw_dirhist_4='/Users/bailey/Developer/work/skejio/core'
 let g:netrw_dirhist_5='/home/bailey'
-=======
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/bailey/Developer/work/hubify/core'
-let g:netrw_dirhist_2='/Volumes/xeno'
->>>>>>> b2b2fc87703eacc9e52d5c5a8de7cf6876cae904
