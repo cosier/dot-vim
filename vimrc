@@ -29,6 +29,10 @@ Plug 'mtscout6/vim-cjsx'
 
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'cespare/vim-toml'
+Plug 'timonv/vim-cargo'
+Plug 'rust-lang/rust.vim'
+
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
@@ -71,7 +75,8 @@ set number
 set background=dark
 "colorscheme solarized
 
-set ts=2
+set colorcolumn=99
+
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -82,9 +87,9 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
-let &colorcolumn=join(range(81,999),",")
+let &colorcolumn=join(range(99,999),",")
 highlight ColorColumn ctermbg=0
-let &colorcolumn="80,".join(range(220,999),",")
+let &colorcolumn="99,".join(range(220,999),",")
 
 function! CopyToOSClipboard() range
   exec(":silent !cat %:p | sed -n " . a:firstline . "," . a:lastline . "p | pbcopy")

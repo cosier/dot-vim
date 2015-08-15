@@ -21,6 +21,7 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 nnoremap <C-o> <ESC>:%s/2000/3030/g<CR>
 
 
+nmap <leader>b <ESC>:CargoBuild<CR>
 
 nmap <leader>h <ESC>:'<,'> !html2haml<CR>
 vmap <leader>h <ESC>:'<,'> !html2haml<CR>
