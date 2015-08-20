@@ -29,6 +29,7 @@ Plug 'mtscout6/vim-cjsx'
 
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'cespare/vim-toml'
 Plug 'timonv/vim-cargo'
 Plug 'rust-lang/rust.vim'
 Plug 'phildawes/racer'
