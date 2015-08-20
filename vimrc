@@ -33,7 +33,7 @@ Plug 'timonv/vim-cargo'
 Plug 'rust-lang/rust.vim'
 Plug 'phildawes/racer'
 
-
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
@@ -93,9 +93,9 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
-let &colorcolumn=join(range(81,999),",")
+let &colorcolumn=join(range(121,999),",")
 highlight ColorColumn ctermbg=0
-let &colorcolumn="80,".join(range(220,999),",")
+let &colorcolumn="120,".join(range(220,999),",")
 
 function! CopyToOSClipboard() range
   exec(":silent !cat %:p | sed -n " . a:firstline . "," . a:lastline . "p | pbcopy")
