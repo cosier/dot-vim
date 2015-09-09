@@ -32,7 +32,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'cespare/vim-toml'
 Plug 'timonv/vim-cargo'
 Plug 'rust-lang/rust.vim'
-Plug 'phildawes/racer'
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'cespare/vim-toml'
