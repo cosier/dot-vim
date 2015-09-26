@@ -97,6 +97,15 @@ set noswapfile
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|public)$'
+let g:NERDTreeIgnore=['\~$', 'vendor', 'public/assets']
+
+if exists("g:ctrl_user_command")
+  unlet g:ctrlp_user_command
+endif
+
+set wildignore+=*\\public\/assets\\**
+
 
 let &colorcolumn=join(range(121,999),",")
 highlight ColorColumn ctermbg=0
