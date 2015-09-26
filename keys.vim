@@ -14,10 +14,10 @@ nnoremap <C-R><C-R> <ESC>:source ~/.vim/vimrc<CR>
 nnoremap <C-R><C-K> <ESC>:tabnew ~/.vim/keys.vim<CR>
 nnoremap <C-R><C-V> <ESC>:tabnew ~/.vim/vimrc<CR>
 
-nnoremap <C-S> <ESC>:Ag!
+nnoremap <C-S> <ESC>:Ag! 
 nnoremap <C-W><C-Z> <ESC>:ZoomWin<CR>
 
-nnoremap <Leader>s <ESC>:FixWhitespace<CR>
+nnoremap <Leader>s <ESC>:FixWhitespace<CR> 
 nnoremap <Leader>c <ESC>:ClearAllCtrlPCaches<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
