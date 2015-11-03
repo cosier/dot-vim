@@ -36,7 +36,11 @@ Plug 'jceb/vim-orgmode'
 Plug 'cespare/vim-toml'
 Plug 'timonv/vim-cargo'
 Plug 'rust-lang/rust.vim'
-" Plug 'phildawes/racer'
+
+Plug 'vim-ruby/vim-ruby'
+Plug 'cespare/vim-toml'
+Plug 'timonv/vim-cargo'
+Plug 'rust-lang/rust.vim'
 
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
@@ -74,8 +78,6 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 set hidden
-" let g:racer_cmd = "/usr/local/bin/racer"
-" let $RUST_SRC_PATH="/Users/bailey/Developer/ext/rust/src/"
 
 
 syntax enable
@@ -101,10 +103,19 @@ set noswapfile
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|public)$'
+let g:NERDTreeIgnore=['\~$', 'vendor', 'public/assets']
 
-let &colorcolumn=join(range(99,999),",")
+if exists("g:ctrl_user_command")
+  unlet g:ctrlp_user_command
+endif
+
+set wildignore+=*\\public\/assets\\**
+
+
+let &colorcolumn=join(range(121,999),",")
 highlight ColorColumn ctermbg=0
-let &colorcolumn="99,".join(range(220,999),",")
+let &colorcolumn="120,".join(range(220,999),",")
 
 function! CopyToOSClipboard() range
   exec(":silent !cat %:p | sed -n " . a:firstline . "," . a:lastline . "p | pbcopy")
