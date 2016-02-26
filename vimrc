@@ -15,9 +15,15 @@ Plug 'junegunn/vim-easy-align'
 Plug 'altercation/vim-colors-solarized'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'kovisoft/slimv'
+
 Plug 'evanmiller/nginx-vim-syntax'
+Plug 'vim-scripts/nginx.vim'
+
 Plug 'kchmck/vim-coffee-script'
-"Plug 'vim-trailing-whitespace'
+Plug 'vim-trailing-whitespace'
+
 Plug 'bling/vim-airline'
 Plug 'rking/ag.vim'
 Plug 'bronson/vim-trailing-whitespace'
@@ -75,8 +81,6 @@ set hidden
 let g:racer_cmd = "/usr/local/bin/racer"
 let $RUST_SRC_PATH="/Users/bailey/Developer/ext/rust/src/"
 
-
-
 syntax enable
 filetype plugin indent on
 
@@ -84,9 +88,11 @@ let NERDSpaceDelims=1
 
 set number
 set background=dark
-colorscheme solarized
+" colorscheme darcula
+colorscheme ron
 
 set colorcolumn=99
+set backspace=indent,eol,start
 
 set expandtab
 set shiftwidth=2
@@ -97,12 +103,21 @@ set noswapfile
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|public)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|public|DS_Store|node_modules|vendor|\.log|\.pid)$'
 let g:NERDTreeIgnore=['\~$', 'vendor', 'public/assets']
 
 if exists("g:ctrl_user_command")
   unlet g:ctrlp_user_command
 endif
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 set wildignore+=*\\public\/assets\\**
 

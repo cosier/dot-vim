@@ -15,7 +15,7 @@ nnoremap <C-R><C-K> <ESC>:tabnew ~/.vim/keys.vim<CR>
 nnoremap <C-R><C-V> <ESC>:tabnew ~/.vim/vimrc<CR>
 
 nnoremap <C-S> <ESC>:Ag! 
-nnoremap <C-W><C-Z> <ESC>:ZoomWin<CR>
+nnoremap <C-W><C-Z> <ESC>:ZoomWin<CR><CR>
 
 nnoremap <Leader>s <ESC>:FixWhitespace<CR> 
 nnoremap <Leader>c <ESC>:ClearAllCtrlPCaches<CR>
