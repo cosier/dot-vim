@@ -5,9 +5,11 @@ source ~/.vim/keys.vim
 
 " Set nginx file extension association
 au BufRead,BufNewFile *.nginx setfiletype nginx
+au BufRead,BufNewFile *.conf setfiletype nginx
 
 " Use standard Coffeescript 2 space indent
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " Make sure you use single quotes
 Plug 'junegunn/seoul256.vim'
@@ -32,8 +34,10 @@ Plug 'briancollins/vim-jst'
 
 Plug 'skalnik/vim-vroom'
 Plug 'mtscout6/vim-cjsx'
+Plug 'mxw/vim-jsx'
 
 Plug 'scrooloose/nerdcommenter'
+Plug 'jceb/vim-orgmode'
 
 Plug 'cespare/vim-toml'
 Plug 'timonv/vim-cargo'
@@ -52,6 +56,8 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'slim-template/vim-slim'
+
+Plug 'leafo/moonscript-vim'
 
 Plug 'vim-scripts/ZoomWin'
 
@@ -78,17 +84,21 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 set hidden
-let g:racer_cmd = "/usr/local/bin/racer"
-let $RUST_SRC_PATH="/Users/bailey/Developer/ext/rust/src/"
+" let g:racer_cmd = "/usr/local/bin/racer"
+" let $RUST_SRC_PATH="/Users/bailey/Developer/ext/rust/src/"
 
 syntax enable
 filetype plugin indent on
 
 let NERDSpaceDelims=1
+let g:NERDTreeDirArrows=0
+
 
 set number
 set background=dark
+
 " colorscheme darcula
+" colorscheme solarized
 colorscheme ron
 
 set colorcolumn=99
