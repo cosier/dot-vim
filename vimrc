@@ -19,6 +19,10 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'kovisoft/slimv'
+Plug 'vim-scripts/Limp'
+
+Plug 'modille/groovy.vim'
+Plug 'tfnico/vim-gradle'
 
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'vim-scripts/nginx.vim'
@@ -95,11 +99,12 @@ let g:NERDTreeDirArrows=0
 
 
 set number
-set background=dark
+set background=light
+" set background=dark
 
 " colorscheme darcula
-" colorscheme solarized
-colorscheme ron
+colorscheme solarized
+" colorscheme ron
 
 set colorcolumn=99
 set backspace=indent,eol,start
@@ -121,7 +126,7 @@ if exists("g:ctrl_user_command")
 endif
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
