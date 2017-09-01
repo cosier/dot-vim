@@ -10,6 +10,7 @@ au BufRead,BufNewFile *.conf setfiletype nginx
 " Use standard Coffeescript 2 space indent
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+au BufReadPost *spacemacs set syntax=lisp
 
 " Make sure you use single quotes
 Plug 'junegunn/seoul256.vim'
@@ -99,8 +100,9 @@ let g:NERDTreeDirArrows=0
 
 
 set number
-set background=light
-" set background=dark
+" set background=light
+set background=dark
+so ~/.colour-theme.vim
 
 " colorscheme darcula
 colorscheme solarized
