@@ -18,7 +18,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'altercation/vim-colors-solarized'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'kovisoft/slimv'
 Plug 'vim-scripts/Limp'
 
@@ -128,15 +128,25 @@ if exists("g:ctrl_user_command")
 endif
 
 set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_c_no_include_search = 1
+let g:syntastic_c_auto_refresh_includes = 1
+let g:syntastic_c_remove_include_errors = 0
+let b:syntastic_c_cflags = ' -I~/Developer/work/dimappio/src/midimap'
+
+let g:syntastic_c_include_dirs = [ '../include', 'include' ]
+
 
 set wildignore+=*\\public\/assets\\**
+
+set path+=/Users/bailey/Developer/work/dimappio/src
+set path+=/Users/bailey/Developer/work/dimappio/src/midimap
 
 
 let &colorcolumn=join(range(121,999),",")
