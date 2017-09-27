@@ -100,15 +100,16 @@ let g:NERDTreeDirArrows=0
 
 
 set number
-" set background=light
 set background=dark
-so ~/.colour-theme.vim
-
 " colorscheme darcula
-colorscheme solarized
-" colorscheme ron
+" colorscheme solarized
+colorscheme default
 
-set colorcolumn=99
+if filereadable("~/.colour-theme.vim")
+  so ~/.colour-theme.vim
+endif
+
+set colorcolumn=31
 set backspace=indent,eol,start
 
 set expandtab
@@ -127,9 +128,9 @@ if exists("g:ctrl_user_command")
   unlet g:ctrlp_user_command
 endif
 
-set statusline+=%#warningmsg#
+" set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -138,23 +139,16 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_c_no_include_search = 1
 let g:syntastic_c_auto_refresh_includes = 1
 let g:syntastic_c_remove_include_errors = 0
-let b:syntastic_c_cflags = ' -I~/Developer/work/dimappio/src/midimap'
-
 let g:syntastic_c_include_dirs = [ '../include', 'include' ]
-
 
 set wildignore+=*\\public\/assets\\**
 
-set path+=/Users/bailey/Developer/work/dimappio/src
-set path+=/Users/bailey/Developer/work/dimappio/src/midimap
-
-
 let &colorcolumn=join(range(121,999),",")
-highlight ColorColumn ctermbg=0
-let &colorcolumn="120,".join(range(220,999),",")
+highlight ColorColumn ctermbg=102
+let &colorcolumn="80,".join(range(220,999),",")
 
 function! CopyToOSClipboard() range
-  exec(":silent !cat %:p | sed -n " . a:firstline . "," . a:lastline . "p | pbcopy")
+  exec(":silent !cat %:p | sed -n " . a:firstline . "," . a:lastline . "p | reattach-to-user-namespace pbcopy")
   :redraw!
 endfunction
 
