@@ -144,7 +144,7 @@ let g:syntastic_c_include_dirs = [ '../include', 'include' ]
 set wildignore+=*\\public\/assets\\**
 
 let &colorcolumn=join(range(121,999),",")
-highlight ColorColumn ctermbg=102
+highlight ColorColumn ctermbg=255
 let &colorcolumn="80,".join(range(220,999),",")
 
 function! CopyToOSClipboard() range
