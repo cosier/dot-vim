@@ -145,6 +145,7 @@ set wildignore+=*\\public\/assets\\**
 
 let &colorcolumn=join(range(121,999),",")
 highlight ColorColumn ctermbg=255
+highlight ColorColumn ctermbg=0
 let &colorcolumn="80,".join(range(220,999),",")
 
 function! CopyToOSClipboard() range
