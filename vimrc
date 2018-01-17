@@ -25,7 +25,8 @@ Plug 'vim-scripts/Limp'
 Plug 'modille/groovy.vim'
 Plug 'tfnico/vim-gradle'
 
-Plug 'evanmiller/nginx-vim-syntax'
+" Plug 'evanmiller/nginx-vim-syntax'
+Plug 'chr4/nginx.vim'
 Plug 'vim-scripts/nginx.vim'
 
 Plug 'kchmck/vim-coffee-script'
