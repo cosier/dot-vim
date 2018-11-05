@@ -12,6 +12,15 @@ autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 au BufReadPost *spacemacs set syntax=lisp
 
+fun! SetupCommandAlias(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() is# ":" && getcmdline() is# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfun
+call SetupCommandAlias("W","w")
+call SetupCommandAlias("Q","q")
+
+
 " Make sure you use single quotes
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
