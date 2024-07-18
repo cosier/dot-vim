@@ -109,7 +109,7 @@ let NERDSpaceDelims=1
 let g:NERDTreeDirArrows=0
 
 
-set number
+set nonumber
 set background=dark
 " colorscheme darcula
 " colorscheme solarized

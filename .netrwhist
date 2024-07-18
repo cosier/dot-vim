@@ -1,6 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/bailey/Developer/work/vop/puma'
-let g:netrw_dirhist_2='/Users/bailey/Developer/work/vop/mercury'
-let g:netrw_dirhist_3='/Users/bailey/Developer/work/vop/puma'
-let g:netrw_dirhist_4='/home/bailey/Developer/work/imoto/imoto-backend'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/usr/local/bin'
